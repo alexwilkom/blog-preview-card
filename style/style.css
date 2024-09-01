@@ -51,9 +51,11 @@ Instead of relaying on a CDN.
     /* 12px */
     --space-100: 0.5rem;
     --space-50: 0.25rem;
+    /* 4px */
 
     --border-radius-20px: 1.25rem;
     --border-radius-10px: 0.625rem;
+    --border-radius-4px: 0.25rem;
 }
 
 html,
@@ -68,6 +70,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--color-gray-950);
 }
 
 .card {
@@ -78,6 +81,7 @@ body {
     border-radius: var(--border-radius-20px);
 }
 
+/* TODO: refactor background prop into the shorthand */
 .card-image {
     height: 12.5rem;
     width: 21rem;
@@ -86,6 +90,41 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: var(--border-radius-10px);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: var(--space-300);
+}
+
+.badge {
+    background-color: var(--color-yellow);
+    border-radius: var(--border-radius-4px);
+    font-size: var(--font-size-preset-3);
+    font-weight: var(--font-weight-extrabold);
+    padding: var(--space-50) var(--space-150);
+}
+
+.date,
+.title,
+.description {
+    margin-top: var(--space-150);
+}
+
+.date {
+    font-size: var(--font-size-preset-3);
+}
+
+.title {
+    font-size: var(--font-size-preset-1);
+    font-weight: var(--font-weight-extrabold);
+}
+
+.description {
+    color: var(--color-gray-500);
+    font-size: var(--font-size-preset-2);
 }
 
 .author {
