@@ -40,10 +40,14 @@ Instead of relaying on a CDN.
     --font-size-preset-3: 0.875rem;
 
     /* Spacing */
+    --space-300: 1.5rem;
     --space-200: 1rem;
     --space-150: 0.75rem;
     --space-100: 0.5rem;
     --space-50: 0.25rem;
+
+    --border-radius-20px: 1.25rem;
+    --border-radius-10px: 0.625rem;
 }
 
 html,
@@ -53,4 +57,17 @@ body {
 
 body {
     font-family: var(--font-family), var(--font-family-fallback);
+    background-color: var(--color-yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card {
+    background-color: var(--color-white);
+    width: 24rem;
+    padding: var(--space-300);
+    border: 1px solid var(--color-gray-950);
+    border-radius: var(--border-radius-20px);
 }
