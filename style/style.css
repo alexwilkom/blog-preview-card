@@ -70,7 +70,7 @@ body {
     align-items: center;
 }
 
-.blog-card {
+.card {
     background-color: var(--color-white);
     width: 24rem;
     padding: var(--space-300);
@@ -78,7 +78,7 @@ body {
     border-radius: var(--border-radius-20px);
 }
 
-.blog-card-image {
+.card-image {
     height: 12.5rem;
     width: 21rem;
     background-image: url("../assets/images/illustration-article.svg");
