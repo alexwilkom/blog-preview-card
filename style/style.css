@@ -34,17 +34,18 @@ Instead of relaying on a CDN.
         sans-serif;
     --font-weight-medium: 500;
     --font-weight-extrabold: 800;
-    --font-size-24px: 1.5rem;
-    --font-size-14px: 0.875rem;
+    --font-size-1: 1.5rem;
+    --font-size-2: 1rem;
+    --font-size-3: 0.875rem;
 
     /* Spacing */
-    --space-24px: 1.5rem;
-    --space-12px: 0.75rem;
-    --space-4px: 0.25rem;
+    --space-300: 1.5rem;
+    --space-150: 0.75rem;
+    --space-50: 0.25rem;
 
-    --border-radius-20px: 1.25rem;
-    --border-radius-10px: 0.625rem;
-    --border-radius-4px: 0.25rem;
+    --border-radius-200: 1.25rem;
+    --border-radius-100: 0.625rem;
+    --border-radius-50: 0.25rem;
 }
 
 html,
@@ -65,9 +66,9 @@ body {
 .card {
     background-color: var(--color-white);
     width: 24rem;
-    padding: var(--space-24px);
+    padding: var(--space-300);
     border: 1px solid var(--color-gray-950);
-    border-radius: var(--border-radius-20px);
+    border-radius: var(--border-radius-200);
 }
 
 .card-image {
@@ -75,36 +76,36 @@ body {
     width: 21rem;
     background: url("../assets/images/illustration-article.svg") no-repeat center;
     background-size: cover;
-    border-radius: var(--border-radius-10px);
+    border-radius: var(--border-radius-100);
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: var(--space-24px);
+    margin-top: var(--space-300);
 }
 
 .badge {
     background-color: var(--color-yellow);
-    border-radius: var(--border-radius-4px);
-    font-size: var(--font-size-14px);
+    border-radius: var(--border-radius-50);
+    font-size: var(--font-size-3);
     font-weight: var(--font-weight-extrabold);
-    padding: var(--space-4px) var(--space-12px);
+    padding: var(--space-50) var(--space-150);
 }
 
 .date,
 .title,
 .description {
-    margin-top: var(--space-12px);
+    margin-top: var(--space-150);
 }
 
 .date {
-    font-size: var(--font-size-14px);
+    font-size: var(--font-size-3);
 }
 
 .title {
-    font-size: var(--font-size-24px);
+    font-size: var(--font-size-1);
     font-weight: var(--font-weight-extrabold);
 }
 
@@ -115,13 +116,14 @@ body {
 
 .description {
     color: var(--color-gray-500);
+    font-size: var(--font-size-2);
 }
 
 .author {
     display: flex;
     align-items: center;
-    gap: var(--space-12px);
-    margin-top: var(--space-24px);
+    gap: var(--space-150);
+    margin-top: var(--space-300);
 }
 
 .author-picture {
@@ -131,5 +133,5 @@ body {
 
 .author-name {
     font-weight: var(--font-weight-extrabold);
-    font-size: var(--font-size-14px);
+    font-size: var(--font-size-3);
 }
