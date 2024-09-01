@@ -36,13 +36,19 @@ Instead of relaying on a CDN.
     --font-weight-medium: 500;
     --font-weight-extrabold: 800;
     --font-size-preset-1: 1.5rem;
+    /* 24px */
     --font-size-preset-2: 1rem;
+    /* 16px */
     --font-size-preset-3: 0.875rem;
+    /* 14px */
 
     /* Spacing */
     --space-300: 1.5rem;
+    /* 24px */
     --space-200: 1rem;
+    /* 16px */
     --space-150: 0.75rem;
+    /* 12px */
     --space-100: 0.5rem;
     --space-50: 0.25rem;
 
@@ -80,4 +86,21 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: var(--border-radius-10px);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-150);
+    margin-top: var(--space-300);
+}
+
+.author-picture {
+    width: 2rem;
+    height: 2rem;
+}
+
+.author-name {
+    font-weight: var(--font-weight-extrabold);
+    font-size: var(--font-size-preset-3);
 }
