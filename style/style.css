@@ -108,6 +108,11 @@ body {
     font-weight: var(--font-weight-extrabold);
 }
 
+.title:hover {
+    color: var(--color-yellow);
+    cursor: pointer;
+}
+
 .description {
     color: var(--color-gray-500);
 }
