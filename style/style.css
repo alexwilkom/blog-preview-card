@@ -75,7 +75,6 @@ body {
 
 .card-image {
     height: 12.5rem;
-    max-width: 21rem;
     background: url("../assets/images/illustration-article.svg") no-repeat center;
     background-size: cover;
     border-radius: var(--border-radius-100);
@@ -147,10 +146,6 @@ body {
 
     .card {
         max-width: 20.5rem;
-    }
-
-    .card-image {
-        max-width: 17.5rem;
     }
 
     .author-name {
