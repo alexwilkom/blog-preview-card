@@ -1,11 +1,15 @@
+/*
+I decided to practice to self host the font as they were already in the folder project.
+Instead of relaying on a CDN.
+*/
 @font-face {
-    /* I did not choose to convert ttf to woff2 as the file is already low in size (63KB) */
     /* This family font variable has only 1 axis (wght). Useful tool: https://wakamaifondue.com/ */
     font-family: "Figtree";
+    /* I did not choose to convert ttf to woff2 as the file is already low in size (63KB) */
     src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype-variations");
-    font-weight: 300 800;
-    font-display: fallback;
+    font-weight: 500 800;
     /* Explanation for 'font-display': https://web.dev/articles/font-best-practices#choose_an_appropriate_font-display_strategy */
+    font-display: fallback;
 }
 
 /* Static fonts in case the browser does not load the variable font */
@@ -49,5 +53,4 @@ body {
 
 body {
     font-family: var(--font-family), var(--font-family-fallback);
-    font-weight: var(--font-weight-medium);
 }
