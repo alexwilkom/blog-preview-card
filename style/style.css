@@ -1,0 +1,53 @@
+@font-face {
+    /* I did not choose to convert ttf to woff2 as the file is already low in size (63KB) */
+    /* This family font variable has only 1 axis (wght). Useful tool: https://wakamaifondue.com/ */
+    font-family: "Figtree";
+    src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype-variations");
+    font-weight: 300 800;
+    font-display: fallback;
+    /* Explanation for 'font-display': https://web.dev/articles/font-best-practices#choose_an_appropriate_font-display_strategy */
+}
+
+/* Static fonts in case the browser does not load the variable font */
+@font-face {
+    font-family: "Figtree-extrabold";
+    src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Figtree-medium";
+    src: url("../assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+}
+
+:root {
+    /* Colors */
+    --color-white: hsl(0, 0%, 100%);
+    --color-yellow: hsl(47, 88%, 63%);
+    --color-gray-500: hsl(0, 0%, 42%);
+    --color-gray-950: hsl(0, 0%, 7%);
+
+    /* Typography */
+    --font-family: "Figtree";
+    --font-family-fallback: "Figtree-medium", system-ui, sans-serif;
+    --font-weight-medium: 500;
+    --font-weight-extrabold: 800;
+    --font-size-preset-1: 1.5rem;
+    --font-size-preset-2: 1rem;
+    --font-size-preset-3: 0.875rem;
+
+    /* Spacing */
+    --space-200: 1rem;
+    --space-150: 0.75rem;
+    --space-100: 0.5rem;
+    --space-50: 0.25rem;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family), var(--font-family-fallback);
+    font-weight: var(--font-weight-medium);
+}
