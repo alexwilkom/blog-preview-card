@@ -38,7 +38,6 @@ body {
     font-family: var(--font-family), sans-serif;
     background-color: var(--color-yellow);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-gray-950);
